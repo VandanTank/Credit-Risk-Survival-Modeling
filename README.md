@@ -25,7 +25,7 @@ The curve shows the predicted probability that the borrower will *not* default a
 
 ### 1. Model Efficiency and Rigor (Law of Diminishing Returns)
 
-We rigorously tested the model's performance against computational cost by training on varying data subsets.
+I rigorously tested the model's performance against computational cost by training on varying data subsets.
 
 | Sample Size | Training Time | Concordance Index (C-Index) | Key Insight |
 | :---: | :---: | :---: | :--- |
@@ -34,7 +34,7 @@ We rigorously tested the model's performance against computational cost by train
 
 ### 2. Model Interpretability (The "Why")
 
-Using **SHAP (SHapley Additive exPlanations)**, we opened the model's "black box" to confirm its logic.
+Using **SHAP (SHapley Additive exPlanations)**, I opened the model's "black box" to confirm its logic.
 
 | Rank | Feature | Interpretation |
 | :---: | :--- | :--- |
@@ -45,7 +45,7 @@ Using **SHAP (SHapley Additive exPlanations)**, we opened the model's "black box
 
 ### 3. Ethical Fairness Audit
 
-We conducted a synthetic test by comparing two **identical borrowers** whose only difference was their loan purpose (`Debt Consolidation` vs. `Small Business`). The survival curves were **nearly identical**, proving the model is **not biased** by the loan's stated purpose and adheres to ethical standards by relying on core financial metrics (`int_rate`, `dti`) instead.
+I conducted a synthetic test by comparing two **identical borrowers** whose only difference was their loan purpose (`Debt Consolidation` vs. `Small Business`). The survival curves were **nearly identical**, proving the model is **not biased** by the loan's stated purpose and adheres to ethical standards by relying on core financial metrics (`int_rate`, `dti`) instead.
 
 ---
 
@@ -76,4 +76,5 @@ We conducted a synthetic test by comparing two **identical borrowers** whose onl
     ```bash
     streamlit run app.py
     ```
+
 
